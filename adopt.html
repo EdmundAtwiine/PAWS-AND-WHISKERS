@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Whiskers | Adopt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Paws & Whiskers</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt.html" class="active">Adopt</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Adopt a Pet</h2>
+            <p>Find your perfect furry companion</p>
+        </div>
+    </section>
+
+    <section class="adoption-process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Adoption Process</h2>
+                <p>How to bring a new family member home</p>
+            </div>
+            <div class="process-steps fade-in">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse Available Pets</h3>
+                    <p>Look through our gallery of adorable dogs and cats waiting for their forever homes.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Submit Application</h3>
+                    <p>Fill out our adoption form with your information and preferences.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Meet & Greet</h3>
+                    <p>Schedule a time to meet your potential new family member in person.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Welcome Home</h3>
+                    <p>Complete the adoption process and bring your new pet home!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="adoption-form">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Adoption Application</h2>
+                <p>Please fill out the form below to start the adoption process</p>
+            </div>
+            <form id="adoptForm" class="fade-in">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Home Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="petType">Preferred Pet Type</label>
+                    <select id="petType" name="petType" required>
+                        <option value="">Select an option</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="either">Either</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="petPreference">Specific Pet (if any)</label>
+                    <input type="text" id="petPreference" name="petPreference" placeholder="E.g., Max, Luna, etc.">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Previous Pet Experience</label>
+                    <textarea id="experience" name="experience" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn primary-btn">Submit Application</button>
+                </div>
+            </form>
+            <div id="formSuccess" class="form-success">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You!</h3>
+                <p>Your adoption application has been submitted successfully. We'll contact you within 2-3 business days to discuss the next steps.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Paws & Whiskers</h2>
+                    <p>Giving stray animals a second chance at happiness.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adopt.html">Adopt</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Paws & Whiskers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

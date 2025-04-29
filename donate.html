@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Whiskers | Donate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Paws & Whiskers</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt.html">Adopt</a></li>
+                    <li><a href="donate.html" class="active">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Make a Donation</h2>
+            <p>Help us continue our mission to save stray animals</p>
+        </div>
+    </section>
+
+    <section class="donation-info">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Your Support Matters</h2>
+                <p>How your donations help our furry friends</p>
+            </div>
+            <div class="donation-cards fade-in">
+                <div class="donation-card">
+                    <div class="icon">
+                        <i class="fas fa-medkit"></i>
+                    </div>
+                    <h3>Medical Care</h3>
+                    <p>Provides vaccinations, spay/neuter surgeries, and treatment for injured or sick animals.</p>
+                </div>
+                <div class="donation-card">
+                    <div class="icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food & Shelter</h3>
+                    <p>Ensures our rescued animals have nutritious food and comfortable shelter while awaiting adoption.</p>
+                </div>
+                <div class="donation-card">
+                    <div class="icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Rescue Operations</h3>
+                    <p>Funds our rescue teams who respond to reports of stray or abandoned animals in need.</p>
+                </div>
+                <div class="donation-card">
+                    <div class="icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Education & Outreach</h3>
+                    <p>Supports community education programs about responsible pet ownership and animal welfare.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="donation-form">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Make a Donation</h2>
+                <p>Every contribution, no matter the size, makes a difference</p>
+            </div>
+            <form id="donateForm" class="fade-in">
+                <div class="donation-amounts">
+                    <h3>Select Donation Amount</h3>
+                    <div class="amount-options">
+                        <label>
+                            <input type="radio" name="amount" value="25" checked>
+                            <span class="amount-box">$25</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="amount" value="50">
+                            <span class="amount-box">$50</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="amount" value="100">
+                            <span class="amount-box">$100</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="amount" value="custom">
+                            <span class="amount-box">Custom</span>
+                        </label>
+                    </div>
+                    <div id="customAmount" class="custom-amount">
+                        <label for="customAmountInput">Enter Custom Amount ($)</label>
+                        <input type="number" id="customAmountInput" min="1" placeholder="Enter amount">
+                    </div>
+                </div>
+                <div class="donor-info">
+                    <h3>Your Information</h3>
+                    <div class="form-group">
+                        <label for="donorName">Full Name</label>
+                        <input type="text" id="donorName" name="donorName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorEmail">Email Address</label>
+                        <input type="email" id="donorEmail" name="donorEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorPhone">Phone Number</label>
+                        <input type="tel" id="donorPhone" name="donorPhone">
+                    </div>
+                </div>
+                <div class="payment-info">
+                    <h3>Payment Information</h3>
+                    <div class="form-group">
+                        <label for="cardName">Name on Card</label>
+                        <input type="text" id="cardName" name="cardName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expDate">Expiration Date</label>
+                            <input type="text" id="expDate" name="expDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn primary-btn">Complete Donation</button>
+                </div>
+            </form>
+            <div id="donationSuccess" class="form-success">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You for Your Donation!</h3>
+                <p>Your generous contribution will help us continue our mission to rescue and rehome stray animals. A receipt has been sent to your email.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Paws & Whiskers</h2>
+                    <p>Giving stray animals a second chance at happiness.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adopt.html">Adopt</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Paws & Whiskers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
